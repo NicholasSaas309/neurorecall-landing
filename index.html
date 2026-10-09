@@ -872,6 +872,7 @@
     {n:'Chris Palmer', t:'Great addition to my daily wellness routine — feels like a clean, straightforward formula.', time:'3 weeks ago'},
   ];
   const commentsGrid = document.getElementById('commentsGrid');
+  commentsGrid.innerHTML = '';
   comments.forEach(c=>{
     const initials = c.n.split(' ').map(w=>w[0]).slice(0,2).join('');
     const card = document.createElement('div');
@@ -898,6 +899,7 @@
     {n:'Emily Novak', src:'https://cdn.jsdelivr.net/gh/NicholasSaas309/neurorecall-landing@main/assets/testimonial-3.mp4'},
   ];
   const videoGrid = document.getElementById('videoGrid');
+  videoGrid.innerHTML = '';
 
   videos.forEach((v,i)=>{
     const card = document.createElement('div');
@@ -959,6 +961,7 @@
   ];
   const maxBarCount = Math.max(...ratingBars.map(b=>b.count));
   const summaryBars = document.getElementById('summaryBars');
+  summaryBars.innerHTML = '';
   ratingBars.forEach(b=>{
     const row = document.createElement('div');
     row.className = 'bar-row';
@@ -979,6 +982,7 @@
     {n:'Karen L.', rating:4, title:'Happy with the routine', text:'Easy to remember to take, and I do feel noticeably clearer by mid-afternoon compared to before.', date:'09/12/2026'},
   ];
   const reviewsList = document.getElementById('reviewsList');
+  reviewsList.innerHTML = '';
   reviews.forEach(r=>{
     const initials = r.n.split(' ').map(w=>w[0]).slice(0,2).join('');
     const row = document.createElement('div');
